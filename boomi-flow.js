@@ -54,7 +54,7 @@ var manywho = {
         manywho.engine.initialize(
           tenantId,
           "d27a2fbd-9829-42b6-87df-dcea2a266bf8",
-          "a810d167-41e8-4aed-9f19-9074b51564eb",
+          "a810d167-41e8-4aed-9f19-9074b51564eb", // dummy save
           'main',
           queryParameters['join'],
           queryParameters['authorization'],
