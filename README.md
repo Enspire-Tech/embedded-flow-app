@@ -1,1 +1,1 @@
-# embedded-flow-app
+# A sample embedded Boomi Connect Now app

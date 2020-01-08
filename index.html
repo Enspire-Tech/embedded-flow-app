@@ -4,29 +4,32 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="https://platform.boomi.com/favicon.ico">
     <link
       rel="stylesheet"
-      href="//stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     />
     <link
       rel="stylesheet"
-      href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
     />
+    <!--
     <link 
       rel="stylesheet"
-      href="//cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.css"
     />
-    <link rel="stylesheet" href="style.css" />
+    -->
+    <link rel="stylesheet" href="./style.css" />
     <!-- fictious name in title -->
     <title>
-      INTECH
+      CN Solutions
     </title>
   <body>
     <nav
       class="navbar navbar-full navbar-expand-lg fixed-top navbar-light bg-white border-bottom"
     >
       <div class="container-fluid">
-        <a class="navbar-brand" href="index.html">INTECH Portal</a>
+        <a class="navbar-brand" href="index.html">CN Solutions Portal</a>
         <button
           class="navbar-toggler navbar-toggler-right"
           type="button"
@@ -111,10 +114,8 @@
       </div>
     </nav>
 
-    <div class="container-fluid">
-      <!-- <h1 class="my-4">Welcome to INTECH</h1> -->
-
-      <div class="row">
+    <div class="container-fluid h-100">
+      <div class="row h-100">
         <!-- Left Column -->
         <div class="col-lg-3 col-sm-4">
           <!-- List-Group Panel -->
@@ -162,8 +163,8 @@
         <!--/Left Column-->
         <!-- Center Column -->
         <div id="center_column" class="col-lg-6 col-sm-8">
-          <div class="row">
-            <div id="slide_container" class="col-12 text-right">
+          <div class="h-100">
+            <div class="col-12 text-right">
               <button id="shrink_button" data-direction="in" class="btn btn-secondary mb-3 toggle-right-column hide">
                 <i class="fa fa-arrow-alt-circle-left"></i>
               </button>
@@ -171,7 +172,7 @@
                 <i class="fa fa-arrow-alt-circle-right"></i>
               </button>
             </div>
-            <div class="col-12">
+            <div class="h-100">
               <div id="manywho" class="p-0 m-0">
                 <div id="loader" class="mw-bs" style="width: 100%; height: 100%;">
                     <div class="wait-container">
@@ -180,9 +181,12 @@
                 </div>
               </div>
             </div>
-            <div class="col-12">
-              <div class="mb-3"></div>
-            </div>
+          </div>
+        </div>
+        <!-- / Center Column -->
+        <!-- Right Column -->
+        <div id="right_column" class="col-lg-3 col-sm-12 widescreen-slide-container slide-in">
+          <div id="slide_container" class="col-12 text-right">
             <div class="col-12 portfolio-item">
               <div class="card h-100">
                 <div class="card-body">
@@ -198,8 +202,6 @@
                 </div>
               </div>
             </div>
-          </div>
-          <div class="row mt-5">
             <div class="col-12 portfolio-item">
               <div class="card h-100">
                 <div class="card-body">
@@ -211,44 +213,7 @@
                   </p>
                 </div>
               </div>
-          </div>
-        </div>
-        <!-- / Center Column -->
-        <!-- Right Column -->
-        <div id="right_column" class="col-lg-3 col-sm-12 widescreen-slide-container slide-in">
-          <div class="">
-            <div class="card">
-              <div class="card-header p-b-0">
-                <h5 class="card-title">
-                  <i class="fa fa-sign-in" aria-hidden="true"></i>
-                  Log In
-                </h5>
-              </div>
-              <div class="card-block">
-                <form>
-                  <div class="form-group">
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="uid"
-                      name="uid"
-                      placeholder="Username"
-                    />
-                  </div>
-                  <div class="form-group">
-                    <input
-                      type="password"
-                      class="form-control"
-                      id="pwd"
-                      name="pwd"
-                      placeholder="Password"
-                    />
-                  </div>
-                  <button type="submit" class="btn btn-primary">Log In</button>
-                </form>
-              </div>
             </div>
-  
             <!-- Progress Bars -->
             <div class="card">
               <div class="card-header p-b-0">
@@ -269,7 +234,7 @@
                     aria-describedby="progress-caption-1"
                   ></div>
                 </div>
-  
+
                 <div class="text-center" id="progress-caption-2">
                   Morbi fermentum &hellip; 80%
                 </div>
@@ -305,13 +270,13 @@
               </div>
             </div>
           </div>
-          
+        </div>
         <!--/Right Column -->
       </div>
-
+    </div>
     <footer class="py-3 bg-white footer-light fixed-bottom border-top">
       <div class="container">
-        <p class="m-0 text-center">Copyright &copy; INTECH 2019</p>
+        <p class="m-0 text-center">Copyright &copy; CN Solutions 2019</p>
       </div>
     </footer>
 
@@ -322,9 +287,9 @@
     </script>
     <script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=default,es6"></script>
     <script src="https://apis.google.com/js/platform.js" async defer></script>
-    <script src="//stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
-    <script src="script.js"></script>
-    <script src="boomi-flow.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="./script.js"></script>
+    <script src="./boomi-flow.js"></script>
     <script src="https://assets.manywho.com/js/loader.min.js"></script>
     
   </body>

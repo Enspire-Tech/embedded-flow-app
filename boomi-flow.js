@@ -29,7 +29,7 @@ var manywho = {
             mode: queryParameters['mode'],
             reportingMode: queryParameters['reporting-mode'],
             trackLocation: false,
-            replaceUrl: true,
+            replaceUrl: false,
             collaboration: {
                 isEnabled: false
             },
@@ -44,19 +44,7 @@ var manywho = {
             theme: queryParameters['theme']
         };
 
-        var tenantId = queryParameters['tenant-id'];
-        if (!tenantId) {
-
-            tenantId = '80242998-66d4-44a0-9eba-fd5bc5644932'; /*window.location.pathname
-                        .split('/')
-                        .filter(function (path) {
-
-                            return path && path.length > 0;
-
-                        })[0];
-                        */
-        }
-
+        var tenantId = '80242998-66d4-44a0-9eba-fd5bc5644932';
         flowId = '5f1f3608-da36-4de8-ac1c-2ba3e9a0bc62'; 
 
         manywho.engine.initialize(
