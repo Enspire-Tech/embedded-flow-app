@@ -1,15 +1,15 @@
 var manywho = {
     cdnUrl: 'https://assets.manywho.com',
     customResources: [
-        'https://files-manywho-com.s3.amazonaws.com/80242998-66d4-44a0-9eba-fd5bc5644932/ga104.ci-components.js',
-        'https://files-manywho-com.s3.amazonaws.com/80242998-66d4-44a0-9eba-fd5bc5644932/ga104.ci-components.css'
+        'https://files-manywho-com.s3.amazonaws.com/abc01a4e-3f09-4f37-a175-643eae3edfcb/ci-components.js',
+        'https://files-manywho-com.s3.amazonaws.com/abc01a4e-3f09-4f37-a175-643eae3edfcb/ci-components.css'
     ],
     requires: ['core', 'bootstrap3'],
     initialize: function () {
 
         var queryParameters = manywho.utils.parseQueryString(window.location.search.substring(1));
 
-        manywho.theming.custom('https://files-manywho-com.s3.amazonaws.com/80242998-66d4-44a0-9eba-fd5bc5644932/ga104.customstyles.css');
+        manywho.theming.custom('https://files-manywho-com.s3.amazonaws.com/abc01a4e-3f09-4f37-a175-643eae3edfcb/customstyles.css');
         
         manywho.settings.initialize({
             adminTenantId: 'da497693-4d02-45db-bc08-8ea16d2ccbdf',
